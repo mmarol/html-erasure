@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "HTML Erasure",
+  "description": "This extension will erase the site",
+  "version": "1.0",
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+
+  "browser_action": {
+    "default_title": "Inject!",
+    "default_icon": "favicon.png"
+  },
+
+  "permissions": [
+    "*://*/*",
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
